@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/back"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/note" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mynote"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8">
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/mynote"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#2f4f4f"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/id_rewrite"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/write"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2f4f4f"
+            android:text="完成"
+            android:elevation="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/detail_edit"
+        android:gravity="top"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:background="#efefef"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="#EFDFDF"
+        android:layout_weight="2">
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#f8f8f8"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="3"
+            android:columnWidth="120dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center" >
+        </GridView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6699ff</color>
+    <color name="colorPrimaryDark">#6699ff</color>
+    <color name="colorAccent">#6699ff</color>
+    <color name="off_text">#efefef</color>
+    <color name="on_text">#90ee90</color>
+    <color name="photopicker_background">#181819</color>
+</resources>
